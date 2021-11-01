@@ -7,7 +7,7 @@ const app = express();
 connectDB(); 
 
 const corsOptions = {
-	origin: 'https://node-send-fontend-2ztp0ryqm-cmdeveloper97.vercel.app',
+	origin: process.env.FRONTEND_URL,
 	credentials:true,
 	optionSuccessStatus:200
 }
