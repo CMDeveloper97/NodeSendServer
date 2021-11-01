@@ -79,7 +79,7 @@ exports.verifyPassword = async (req,res,next) => {
 
 exports.getLink = async (req,res,next)=> { 
 	const { url } = req.params;
-	const link = await Link.findOne({ url }); 
+	const link = await Link.findOne({ url });
 
 	if(!link) {
         res.status(404).json({msg: "Link doesn't exits"});
