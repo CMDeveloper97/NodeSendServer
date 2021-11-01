@@ -85,7 +85,7 @@ exports.getLink = async (req,res,next)=> {
         res.status(404).json({msg: "Link doesn't exits"});
         return next();
     }
-  
+   
 	res.json({file: link.name, password: false})  
 
 	next();
