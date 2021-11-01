@@ -89,4 +89,5 @@ exports.getLink = async (req,res,next)=> {
 	res.json({file: link.name, password: false})  
 
 	next();
+	
 }
