@@ -16,7 +16,7 @@ app.use(cors({ credentials: true, origin: true }));
 app.options("*", cors());
 
 app.use(express.json({extend: true}));
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 8000;
 
 //Public carpet
 app.use(express.static('uploads'));
@@ -26,6 +26,6 @@ app.use('/api/auth/', require('./routes/auth'));
 app.use('/api/links/', require('./routes/links'));
 app.use('/api/files/', require('./routes/files'));
  
-app.listen(port, '0.0.0.0', () => {
+app.listen(port, () => {
 	console.log(`Server works on ${port}`);
 })
