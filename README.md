@@ -1,5 +1,8 @@
 # Backend Node-Send
-Application for upload and download files. 
+Application for upload and download files with:
+* Password validation.
+* Account system.
+* Download counter.
 
 ## Build with 🛠️
 * Frontend:  
@@ -7,7 +10,7 @@ Application for upload and download files.
   - [TailwindCSS](https://tailwindcss.com/)  
 * Backend:  
   - [MongoDB](https://www.mongodb.com/)
-  - [TailwindCSS](https://tailwindcss.com/)   
+  - [ExpressJS](https://expressjs.com/)   
   - [Heroku](https://vercel.com/)
 * Deploy   
  - [Vercel](https://vercel.com/)
