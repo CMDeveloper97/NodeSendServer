@@ -11,8 +11,8 @@ const corsOptions = {
 	// credentials:true,
 	// optionSuccessStatus:200
 }
-app.use(cors(corsOptions));
-// app.use(cors({ credentials: true, origin: true }));
+// app.use(cors(corsOptions));
+app.use(cors({ credentials: true, origin: true }));
 // app.options("*", cors()); 
 
 app.use(express.json({extend: true}));
