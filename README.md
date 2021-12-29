@@ -14,5 +14,5 @@ Application for upload and download files with:
   - [MongoDB](https://www.mongodb.com/)
   - [ExpressJS](https://expressjs.com/)
 * Deploy   
- - [Vercel](https://vercel.com/)
- - [Heroku](https://www.heroku.com/)
+  - [Vercel](https://vercel.com/)
+  - [Heroku](https://www.heroku.com/)
