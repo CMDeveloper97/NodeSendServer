@@ -1,30 +1,25 @@
 const express = require('express');
 const connectDB = require('./config/db');
 const cors = require('cors');
-const corsOptions = {
-  origin: `${ process.env.FRONTEND_URL }`,
-},
 
 const app = express();
 
 connectDB(); 
 
-// const corsOptions = {
-// 	origin: process.env.FRONTEND_URL,
-// 	// credentials:true,
-// 	// optionSuccessStatus:200
-// }
-// app.use(cors(corsOptions));
-// app.use(cors({ credentials: true, origin: true }));
-// app.options("*", cors()); 
+const corsOptions = {
+	origin: process.env.FRONTEND_URL,
+	credentials:true,
+	optionSuccessStatus:200
+}
+app.use(cors(corsOptions));
+app.use(cors({ credentials: true, origin: true }));
+app.options("*", cors()); 
 
 app.use(express.json({extend: true}));
 const port = process.env.PORT || 4000;
 
 //Public carpet
 app.use(express.static('uploads'));
-
-app.use( cors( corsOptions ) );  
 
 app.use('/api/users/', require('./routes/users'));
 app.use('/api/auth/', require('./routes/auth'));
