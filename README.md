@@ -8,6 +8,7 @@ Application for upload and download files with:
 * Frontend:  
   - [Next.js](https://nextjs.org/)
   - [TailwindCSS](https://tailwindcss.com/)  
+  - [Axios](https://axios-http.com/)  
 * Backend:  
   - [MongoDB](https://www.mongodb.com/)
   - [ExpressJS](https://expressjs.com/)
