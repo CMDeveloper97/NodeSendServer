@@ -3,6 +3,7 @@ Application for upload and download files with:
 * Password validation.
 * Account system.
 * Download counter.
+* Mobile support.
 
 ## Build with 🛠️
 * Frontend:  
