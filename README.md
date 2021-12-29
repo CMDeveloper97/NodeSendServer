@@ -10,8 +10,7 @@ Application for upload and download files with:
   - [TailwindCSS](https://tailwindcss.com/)  
 * Backend:  
   - [MongoDB](https://www.mongodb.com/)
-  - [ExpressJS](https://expressjs.com/)   
-  - [Heroku](https://vercel.com/)
+  - [ExpressJS](https://expressjs.com/)
 * Deploy   
  - [Vercel](https://vercel.com/)
  - [Heroku](https://www.heroku.com/)
