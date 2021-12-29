@@ -12,8 +12,10 @@ connectDB();
 // 	optionSuccessStatus:200
 // }
 // app.use(cors(corsOptions));
-app.use(cors({ credentials: true, origin: true }));
-app.options("*", cors());
+// app.use(cors({ credentials: true, origin: true }));
+// app.options("*", cors());
+
+app.use(cors());
 
 app.use(express.json({extend: true}));
 const port = process.env.PORT || 4000;
