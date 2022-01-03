@@ -21,7 +21,7 @@ app.use(express.json({extend: true}));
 const port = process.env.PORT || 4000;
 
 //Public carpet
-app.use(express.static('uploads'));
+app.use(express.static('uploads')); 
 
 app.use('/api/users/', require('./routes/users'));
 app.use('/api/auth/', require('./routes/auth'));
