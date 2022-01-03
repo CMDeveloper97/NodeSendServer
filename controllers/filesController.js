@@ -5,10 +5,10 @@ const fs = require('fs');
 const Link = require('../models/Link');
  
 exports.uploadFile = async (req,res, next) => {
-	const multerConfiguration = {
+	const multerConfiguration = { 
 		limits: {fileSize: req.user ? (1024*1024*10) : (1024*1024) },
 		storage: fileStorage = multer.diskStorage({
-			destination: (req, file, cb) => {
+			destination: (req, file, cb) => { 
 				cb(null, __dirname + '/../uploads') 
 			},
 			filename: (req, file, cb) => { 
